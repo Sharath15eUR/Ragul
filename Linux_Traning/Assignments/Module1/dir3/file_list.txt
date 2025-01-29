@@ -1,0 +1,5 @@
+total 0
+-rw-rw-r-- 1 ragul ragul 0 Jan 29 17:43 file_list.txt
+-rw-rw-r-- 1 ragul ragul 0 Jan 29 17:42 file1.txt
+-rw-rw-r-- 1 ragul ragul 0 Jan 29 17:42 file2.txt
+-rw-rw-r-- 1 ragul ragul 0 Jan 29 17:42 file3.txt

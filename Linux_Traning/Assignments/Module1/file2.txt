@@ -1,0 +1,2 @@
+touch file2.txt
+chmod g-w file2.txt
