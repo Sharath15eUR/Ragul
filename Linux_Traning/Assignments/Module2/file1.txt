@@ -1,0 +1,11 @@
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2$ mkdir dir1
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2$ cd dir1
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2/dir1$ fallocate -l 3M dummyfile.txt && fallocate -l 3M dummyfile1.txt
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2/dir1$ ls -lh
+total 6.0M
+-rw-rw-r-- 1 ragul ragul 3.0M Feb  3 15:40 dummyfile1.txt
+-rw-rw-r-- 1 ragul ragul 3.0M Feb  3 15:40 dummyfile.txt
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2/dir1$ find . -maxdepth 1 -type f -size +1M > res.txt
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2/dir1$ cat res.txt 
+./dummyfile.txt
+./dummyfile1.txt

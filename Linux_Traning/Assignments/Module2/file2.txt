@@ -1,0 +1,13 @@
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2/dir2$ sed 's/localhost/127.0.0.1/g' info.txt > info_new.txt
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2/dir2$ cat info_new.txt 
+server=127.0.0.1
+port=8080
+database=127.0.0.1
+user=admin
+password=secret
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2/dir2$ cat info.txt 
+server=localhost
+port=8080
+database=localhost
+user=admin
+password=secret

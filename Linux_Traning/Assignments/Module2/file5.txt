@@ -1,0 +1,2 @@
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2$ ip route | awk '/default/ {print $3}' | sort -u
+192.168.1.1

@@ -1,0 +1,6 @@
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2$ cd dir3
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2/dir3$ grep 'ERROR' log.txt | grep -v 'DEBUG' > searchlog.txt
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2/dir3$ cat searchlog.txt 
+ERROR: Unable to connect to the database.
+ERROR: Failed to fetch data from API endpoint '/users'.
+ERROR: Missing required parameter in the request.

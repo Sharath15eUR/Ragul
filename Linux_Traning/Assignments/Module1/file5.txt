@@ -1,3 +1,12 @@
 mkdir dir3
 touch dir3/file1.txt dir3/file2.txt dir3/file3.txt
 ls -lt dir3 > dir3/file_list.txt
+
+
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module1$ ls -lt dir3 > dir3/file_list.txt
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module1$ cat dir3/file_list.txt
+total 0
+-rw-rw-r-- 1 ragul ragul 0 Feb  3 15:27 file_list.txt
+-rw-rw-r-- 1 ragul ragul 0 Jan 29 17:42 file1.txt
+-rw-rw-r-- 1 ragul ragul 0 Jan 29 17:42 file2.txt
+-rw-rw-r-- 1 ragul ragul 0 Jan 29 17:42 file3.txt

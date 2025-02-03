@@ -2,13 +2,18 @@ mkdir -p dir1/dir2
 
 
 touch dir1/dir2/file.txt
-echo "This is the content of the file." > dir1/dir2/file.txt
+echo "Hello" > dir1/dir2/file.txt
 
 
-ln -s dir1/dir2/file.txt dir1/link_to_file.txt
+ln -s dir1/dir2/file.txt dir1/link_file.txt
 
 
-ls -l dir1/link_to_file.txt
+ls -l dir1/link_file.txt
 
 
-cat dir1/link_to_file.txt
+cat dir1/link_file.txt
+
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module1$ ls -l dir1/link_file.txt
+lrwxrwxrwx 1 ragul ragul 18 Jan 29 17:26 dir1/link_file.txt -> dir1/dir2/file.txt
+
+

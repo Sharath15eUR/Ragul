@@ -1,0 +1,9 @@
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2$ nano script.sh
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2$ chmod +x script.sh 
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2$ ls -l script.sh
+-rwxrwxr-x 1 ragul ragul 102 Feb  3 17:48 script.sh
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2$ script.sh
+script.sh: command not found
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2$ ./script.sh
+Killing process with PID: 99192
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module2$ 

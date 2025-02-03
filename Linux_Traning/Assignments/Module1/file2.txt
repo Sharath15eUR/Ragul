@@ -1,2 +1,6 @@
 touch file2.txt
 chmod g-w file2.txt
+
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module1$ chmod g-w file2.txt
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module1$ ls -l file2.txt
+-rw-r--r-- 1 ragul ragul 35 Jan 29 15:43 file2.txt

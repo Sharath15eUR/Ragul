@@ -1,3 +1,6 @@
 touch file.txt
 chmod +x file.txt
 
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module1$ chmod +x file1.txt
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module1$ ls -l file1.txt
+-rwxrwxr-x 1 ragul ragul 34 Jan 29 12:17 file1.txt

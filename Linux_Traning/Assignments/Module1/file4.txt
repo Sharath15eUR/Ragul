@@ -1,1 +1,6 @@
 ps
+
+(base) ragul@prince:~/Ragul/Ragul/Linux_Traning/Assignments/Module1$ ps
+    PID TTY          TIME CMD
+  73147 pts/2    00:00:00 bash
+ 109251 pts/2    00:00:00 ps

@@ -1,0 +1,5 @@
+server=localhost
+port=8080
+database=localhost
+user=admin
+password=secret
