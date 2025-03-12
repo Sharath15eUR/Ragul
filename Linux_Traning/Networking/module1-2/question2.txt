@@ -1,0 +1,50 @@
+ragul@prince:~/assignments$ sudo systemctl restart vsftpd
+ragul@prince:~/assignments$ ftp localhost
+Connected to localhost.
+220 (vsFTPd 3.0.5)
+Name (localhost:ragul): prince
+331 Please specify the password.
+Password: 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+229 Entering Extended Passive Mode (|||30493|)
+150 Here comes the directory listing.
+226 Directory send OK.
+ftp> pwd
+Remote directory: /home/prince
+ftp> cd ..
+250 Directory successfully changed.
+ftp> ls
+229 Entering Extended Passive Mode (|||16397|)
+150 Here comes the directory listing.
+drwxr-xr-x    3 1001     1001         4096 Mar 10 12:06 ftpuser
+drwxr-x---    2 1002     1002         4096 Mar 10 11:49 prince
+drwxr-x--x   27 1000     1000         4096 Mar 10 10:55 ragul
+226 Directory send OK.
+ftp> cd ftpuser
+250 Directory successfully changed.
+ftp> ls
+229 Entering Extended Passive Mode (|||18333|)
+150 Here comes the directory listing.
+lrwxrwxrwx    1 0        0              12 Mar 10 12:06 ragul -> /media/ragul
+drwxrwxr-x    2 0        0            4096 Mar 09 23:05 song
+226 Directory send OK.
+ftp> cd song
+250 Directory successfully changed.
+ftp> ls
+229 Entering Extended Passive Mode (|||22225|)
+150 Here comes the directory listing.
+-rwxr-xr-x    1 0        0        10698390 Jul 30  2021 Oru-Naalil---Composer's-Dream-Mix.mp3
+-rwxr-xr-x    1 0        0         6165705 Jan 12  2022 Peaky-Blinders_320(PaglaSongs).mp3
+-rwxr-xr-x    1 0        0         7380321 Jan 12  2022 Thala-Kodhum-MassTamilan.fm.mp3
+-rwxr-xr-x    1 0        0        54881932 Feb 14  2023 www.TamilBlasters.rent - Bloody Sweet (From Leo) (2023) 24Bit-96kHz FLAC - Anirudh Ravichander Musical.flac
+-rwxr-xr-x    1 0        0         3478393 Apr 24  2022 y2mate.com - Kaatru Kullae Song From Sarvam Ayngaran HD Quality.mp3
+226 Directory send OK.
+ftp> get Peaky-Blinders_320(PaglaSongs).mp3
+local: Peaky-Blinders_320(PaglaSongs).mp3 remote: Peaky-Blinders_320(PaglaSongs).mp3
+229 Entering Extended Passive Mode (|||64450|)
+150 Opening BINARY mode data connection for Peaky-Blinders_320(PaglaSongs).mp3 (6165705 bytes).
+100% |***********************************************************************************************************|  6021 KiB    6.40 MiB/s    00:00 ETA
+226 Transfer complete.

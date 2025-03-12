@@ -1,0 +1,25 @@
+ragul@prince:~/assignments/Ragul/Linux_Traning/Networking/module1-2$ touch  question1.txt
+ragul@prince:~/assignments/Ragul/Linux_Traning/Networking/module1-2$ cp -r /home/ragul/Music/ /home/ragul/cpy
+ragul@prince:~/assignments/Ragul/Linux_Traning/Networking/module1-2$ ls /home/ragul/Music
+cpy  song
+ragul@prince:~/assignments/Ragul/Linux_Traning/Networking/module1-2$ ls /home/ragul/cpy
+cpy  song
+ragul@prince:~/assignments/Ragul/Linux_Traning/Networking/module1-2$ 
+
+
+-------------------------
+
+ragul@prince:~$ scp -r /home/ragul/Documents/ProjectX user@192.168.1.20:/home/user/ProjectX
+user@192.168.1.20's password: 
+file1                                                                                                   100%    0     0.0KB/s   00:00    
+file2                                                                                                   100%    0     0.0KB/s   00:00    
+file3                                                                                                   100%    0     0.0KB/s   00:00    
+file4                                                                                                   100%    0     0.0KB/s   00:00    
+file5                                                                                                   100%    256     10.2KB/s   00:00    
+ragul@prince:~$ ssh user@192.168.1.20
+user@192.168.1.20's password: 
+user@user:~$ ls
+backup  ProjectX  documents
+user@user:~$ cd ProjectX
+user@user:~/ProjectX$ ls
+file1  file2  file3  file4  file5
