@@ -1,0 +1,46 @@
+Router> enable
+Router# configure terminal
+Router(config)# interface GigabitEthernet0/0
+Router(config-if)# ip address 192.168.1.1 255.255.255.0
+Router(config-if)# no shutdown
+Router(config-if)# exit
+Router(config)# exit
+Router# write memory
+Building configuration...
+[OK]
+Router#
+
+
+Switch> enable
+Switch# configure terminal
+Switch(config)# interface vlan 1
+Switch(config-if)# ip address 192.168.1.2 255.255.255.0
+Switch(config-if)# no shutdown
+Switch(config-if)# exit
+Switch(config)# exit
+Switch# write memory
+Building configuration...
+[OK]
+Switch#
+
+
+C:\> ping 192.168.1.20
+
+Pinging 192.168.1.20 with 32 bytes of data:
+Reply from 192.168.1.20: bytes=32 time<1ms TTL=128
+Reply from 192.168.1.20: bytes=32 time<1ms TTL=128
+Reply from 192.168.1.20: bytes=32 time<1ms TTL=128
+Reply from 192.168.1.20: bytes=32 time<1ms TTL=128
+
+Ping statistics for 192.168.1.20:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+    Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+
+
+C:\> arp -a
+
+Interface: 192.168.1.10 --- 0x3
+  Internet Address      Physical Address      Type
+  192.168.1.1          00E0.F743.11B2        dynamic
+  192.168.1.20         00D0.C99F.5678        dynamic

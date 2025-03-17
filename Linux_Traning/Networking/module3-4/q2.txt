@@ -1,0 +1,58 @@
+ragul@prince:~$ sudo tcpdump -i wlp0s20f3 -nn -e
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on wlp0s20f3, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+14:14:54.096067 90:cc:df:07:a2:6f > a4:fc:a1:2f:82:f1, ethertype IPv4 (0x0800), length 98: 192.168.1.4 > 192.168.1.1: ICMP echo request, id 49015, seq 15, length 64
+14:14:54.099850 a4:fc:a1:2f:82:f1 > 90:cc:df:07:a2:6f, ethertype IPv4 (0x0800), length 98: 192.168.1.1 > 192.168.1.4: ICMP echo reply, id 49015, seq 15, length 64
+14:14:54.463938 a4:fc:a1:2f:82:f1 > 90:cc:df:07:a2:6f, ethertype IPv4 (0x0800), length 103: 170.72.239.181.443 > 192.168.1.4.55962: Flags [P.], seq 679724314:679724351, ack 1277732997, win 237, options [nop,nop,TS val 2625403325 ecr 2414507310], length 37
+14:14:54.464353 90:cc:df:07:a2:6f > a4:fc:a1:2f:82:f1, ethertype IPv4 (0x0800), length 107: 192.168.1.4.55962 > 170.72.239.181.443: Flags [P.], seq 1:42, ack 37, win 501, options [nop,nop,TS val 2414522669 ecr 2625403325], length 41
+14:14:54.654140 90:cc:df:07:a2:6f > a4:fc:a1:2f:82:f1, ethertype IPv4 (0x0800), length 132: 192.168.1.4.55962 > 170.72.239.181.443: Flags [P.], seq 42:108, ack 37, win 501, options [nop,nop,TS val 2414522859 ecr 2625403325], length 66
+14:14:54.729034 a4:fc:a1:2f:82:f1 > 90:cc:df:07:a2:6f, ethertype IPv4 (0x0800), length 66: 170.72.239.181.443 > 192.168.1.4.55962: Flags [.], ack 42, win 237, options [nop,nop,TS val 2625403684 ecr 2414522669], length 0
+14:14:54.975822 a4:fc:a1:2f:82:f1 > 90:cc:df:07:a2:6f, ethertype IPv4 (0x0800), length 66: 170.72.239.181.443 > 192.168.1.4.55962: Flags [.], ack 108, win 237, options [nop,nop,TS val 2625403873 ecr 2414522859], length 0
+14:14:54.975823 a4:fc:a1:2f:82:f1 > 90:cc:df:07:a2:6f, ethertype IPv4 (0x0800), length 139: 170.72.239.181.443 > 192.168.1.4.55962: Flags [P.], seq 37:110, ack 108, win 237, options [nop,nop,TS val 2625403875 ecr 2414522859], length 73
+14:14:54.977320 90:cc:df:07:a2:6f > a4:fc:a1:2f:82:f1, ethertype IPv4 (0x0800), length 104: 192.168.1.4.55962 > 170.72.239.181.443: Flags [P.], seq 108:146, ack 110, win 501, options [nop,nop,TS val 2414523182 ecr 2625403875], length 38
+14:14:55.097100 90:cc:df:07:a2:6f > a4:fc:a1:2f:82:f1, ethertype IPv4 (0x0800), length 98: 192.168.1.4 > 192.168.1.1: ICMP echo request, id 49015, seq 16, length 64
+14:14:55.100580 a4:fc:a1:2f:82:f1 > 90:cc:df:07:a2:6f, ethertype IPv4 (0x0800), length 98: 192.168.1.1 > 192.168.1.4: ICMP echo reply, id 49015, seq 16, length 64
+14:14:55.487864 a4:fc:a1:2f:82:f1 > 90:cc:df:07:a2:6f, ethertype IPv4 (0x0800), length 66: 170.72.239.181.443 > 192.168.1.4.55962: Flags [.], ack 146, win 237, options [nop,nop,TS val 2625404244 ecr 2414523182], length 0
+14:14:56.098092 90:cc:df:07:a2:6f > a4:fc:a1:2f:82:f1, ethertype IPv4 (0x0800), length 98: 192.168.1.4 > 192.168.1.1: ICMP echo request, id 49015, seq 17, length 64
+14:14:56.101608 a4:fc:a1:2f:82:f1 > 90:cc:df:07:a2:6f, ethertype IPv4 (0x0800), length 98: 192.168.1.1 > 192.168.1.4: ICMP echo reply, id 49015, seq 17, length 64
+
+
+
+
+1st Packet (ICMP Echo Request)
+
+14:14:54.096067 90:cc:df:07:a2:6f > a4:fc:a1:2f:82:f1, ethertype IPv4 (0x0800), length 98: 192.168.1.4 > 192.168.1.1: ICMP echo request, id 49015, seq 15, length 64
+
+    Source MAC Address: 90:cc:df:07:a2:6f
+    Destination MAC Address: a4:fc:a1:2f:82:f1
+    Ethertype: 0x0800 (IPv4)
+    Frame Length: 98 bytes
+    Source IP: 192.168.1.4
+    Destination IP: 192.168.1.1
+    Protocol: ICMP (Ping request)
+
+2nd Packet (ICMP Echo Reply)
+
+14:14:54.099850 a4:fc:a1:2f:82:f1 > 90:cc:df:07:a2:6f, ethertype IPv4 (0x0800), length 98: 192.168.1.1 > 192.168.1.4: ICMP echo reply, id 49015, seq 15, length 64
+
+    Source MAC Address: a4:fc:a1:2f:82:f1
+    Destination MAC Address: 90:cc:df:07:a2:6f
+    Ethertype: 0x0800 (IPv4)
+    Frame Length: 98 bytes
+    Source IP: 192.168.1.1
+    Destination IP: 192.168.1.4
+    Protocol: ICMP (Ping reply)
+
+Captured TCP Packet (HTTPS Communication)
+
+14:14:54.463938 a4:fc:a1:2f:82:f1 > 90:cc:df:07:a2:6f, ethertype IPv4 (0x0800), length 103: 170.72.239.181.443 > 192.168.1.4.55962: Flags [P.], seq 679724314:679724351, ack 1277732997, win 237, options [nop,nop,TS val 2625403325 ecr 2414507310], length 37
+
+    Source MAC Address: a4:fc:a1:2f:82:f1
+    Destination MAC Address: 90:cc:df:07:a2:6f
+    Ethertype: 0x0800 (IPv4)
+    Frame Length: 103 bytes
+    Source IP: 170.72.239.181 (HTTPS Server)
+    Destination IP: 192.168.1.4 (Your Computer)
+    Protocol: TCP
+    Source Port: 443 (HTTPS)
+    Destination Port: 55962
