@@ -1,0 +1,172 @@
+Question 1: In which OSI layer does the Wi-Fi standard/protocol fit?
+Physical Layer (Layer 1): This layer handles the actual transmission of radio signals over the air. Wi-Fi uses different frequency bands (2.4 GHz, 5 GHz, and 6 GHz) and modulation techniques to send data wirelessly.
+and Data Link Layer (Layer 2): This layer is responsible for data framing, MAC (Media Access Control) addressing, and ensuring reliable communication between devices. The IEEE 802.11 standard defines how Wi-Fi devices communicate at this layer.
+---------------------------------------------------------------------------------------------------------------------------
+Question 2: Can you share the Wi-Fi devices that you are using day to day life, share that device's wireless capability/properties after connecting to network. Match your device to corresponding Wi-Fi Generations based on properties
+iPhone 16 Pro Max
+
+Wi-Fi Standard: 802.11be (Wi-Fi 7)
+
+Frequency Bands: 2.4 GHz, 5 GHz, 6 GHz
+
+Speed: Up to 46 Gbps (Theoretical Maximum)
+
+Nothing Phone 1
+
+Wi-Fi Standard: 802.11ax (Wi-Fi 6)
+
+Frequency Bands: 2.4 GHz, 5 GHz
+
+Speed: Up to 9.6 Gbps
+
+Acer Predator Helios 300 (Killer Wi-Fi)
+
+Wi-Fi Standard: 802.11ax (Wi-Fi 6E)
+
+Frequency Bands: 2.4 GHz, 5 GHz, 6 GHz
+
+Speed: Up to 9.6 Gbps
+
+Mi TV 2A
+
+Wi-Fi Standard: 802.11ac (Wi-Fi 5)
+
+Frequency Bands: 2.4 GHz, 5 GHz
+
+Speed: Up to 1.3 Gbps
+
+--------------------------------------------------------------------------------------
+Question 3: What is BSS and ESS?
+Basic Service Set (BSS):
+BSS is the fundamental building block of a Wi-Fi network. It consists of a single access point (AP) and the devices (stations) connected to it.
+Extended Service Set (ESS):
+ESS consists of multiple interconnected BSSs to form a larger network.
+
+-----------------------------------------------------------------------------------------
+Question 4: What are the basic functionalities of a Wi-Fi Access Point?
+A WAP is a device that allows you to connect wirelessly to a network, such as the internet or a local area network (LAN). It acts as a central hub for wireless communication and enables devices like smartphones, tablets, and laptops to access the network without the need for wired connections.
+
+----------------------------------------------------------------------------------------
+Question 5: Difference between Bridge Mode and Repeater Mode
+
+Bridge Mode
+
+Connects two separate networks and allows communication between them.
+
+Used to extend wired network connections wirelessly.
+
+Devices connected in bridge mode usually belong to different network segments.
+
+Example: A Wi-Fi bridge connects a wired office network to a wireless building network.
+
+Repeater Mode
+
+Extends the range of an existing Wi-Fi network by amplifying and retransmitting the signal.
+
+Keeps the same network segment and does not create a new network.
+
+Ideal for eliminating dead zones in large homes or buildings.
+
+Example: A Wi-Fi repeater placed between a router and a weak signal area boosts connectivity.
+
+------------------------------------------------------------------------------------------------
+
+Question 6: What are the differences between 802.11a and 802.11b?
+
+802.11a
+
+Frequency: 5 GHz band
+
+Speed: Up to 54 Mbps
+
+Range: Shorter due to higher frequency
+
+Interference: Less interference since the 5 GHz band is less crowded
+
+Use Case: Suitable for high-speed applications in environments with minimal obstructions
+
+802.11b
+
+Frequency: 2.4 GHz band
+
+Speed: Up to 11 Mbps
+
+Range: Longer due to better penetration through walls
+
+Interference: More interference from common devices like microwaves and Bluetooth
+
+Use Case: Suitable for basic web browsing and email in larger areas
+
+---------------------------------------------------------------------------------------------------
+
+Question 7: What is the difference between WPA and WPA2?
+
+WPA (Wi-Fi Protected Access)
+
+Introduced as a temporary replacement for WEP security.
+
+Uses TKIP (Temporal Key Integrity Protocol) for encryption.
+
+Vulnerabilities: Susceptible to some security flaws, though stronger than WEP.
+
+Introduced in: 2003.
+
+WPA2 (Wi-Fi Protected Access 2)
+
+Successor to WPA with improved security.
+
+Uses AES (Advanced Encryption Standard) for stronger encryption.
+
+More resistant to hacking attempts compared to WPA.
+
+Introduced in: 2004.
+
+------------------------------------------------------------------------------------------
+
+Ad hoc Network
+
+An Ad hoc network is a decentralized wireless network where devices communicate directly with each other without requiring a central access point (AP) or infrastructure.
+
+Uses peer-to-peer (P2P) communication.
+
+Typically implemented using the IEEE 802.11 IBSS (Independent Basic Service Set).
+
+Advantages of Ad hoc Networks
+
+No Infrastructure Required – Does not rely on routers or access points.
+
+Easy and Quick Setup – Ideal for temporary or emergency networks.
+
+Cost-Effective – No need for additional network hardware.
+
+Flexible and Scalable – Can be established anywhere with available devices.
+
+Useful in Remote Areas – Can be deployed in disaster zones, military operations, or fieldwork.
+
+Disadvantages of Ad hoc Networks
+
+Limited Range – Devices must be within a short distance of each other.
+
+Security Risks – Lack of central control makes it vulnerable to attacks.
+
+Interference Issues – Unregulated communication can lead to signal disruptions.
+
+Lower Performance – May suffer from latency and lower speeds due to decentralized management.
+
+Difficult to Manage – No centralized control makes troubleshooting complex.
+
+----------------------------------------------------------------------------------------
+
+Question 9: What is CSMA/CA?
+
+Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA)
+
+CSMA/CA is a network protocol used in wireless communication (Wi-Fi) to reduce the chances of data collisions by avoiding simultaneous transmissions. It is a fundamental part of IEEE 802.11 Wi-Fi networks.
+
+-----------------------------------------------------------------------------------------------
+
+Question 10: What is SSID?
+
+Service Set Identifier (SSID)
+
+SSID is the unique name assigned to a Wi-Fi network to distinguish it from others.
