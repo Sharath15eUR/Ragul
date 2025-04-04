@@ -1,0 +1,91 @@
+1. Brief about SplitMAC architecture and how it improves the AP's performance
+
+    SplitMAC architecture divides MAC layer functionalities between the Access Point (AP) and Wireless LAN Controller (WLC).
+
+    The AP handles real-time functions like encryption and decryption.
+
+    The WLC manages control and policy enforcement.
+
+This reduces the processing burden on APs and centralizes network management, improving performance and scalability.
+
+---------------------------------------------------------------------------------------------------------------
+2. Describe CAPWAP, explain the flow between AP and Controller
+
+    CAPWAP (Control and Provisioning of Wireless Access Points) is a tunneling protocol that allows lightweight APs to communicate with a central controller.
+    CAPWAP Flow:
+
+    Discovery: AP searches for a WLC.
+
+    Join: AP establishes a connection with the WLC.
+
+    Configuration: WLC provisions the AP with necessary settings.
+
+    Data Forwarding: AP forwards client data to WLC over the CAPWAP tunnel.
+
+----------------------------------------------------------------------------------------------------
+
+3. Where does CAPWAP fit in the OSI model, and what are the two tunnels in CAPWAP and their purpose?
+
+    CAPWAP operates at Layer 3 (Network Layer) of the OSI model.
+
+    It establishes two tunnels:
+
+        Control Tunnel → For AP-WLC communication, configuration, and management.
+
+        Data Tunnel → For forwarding client data between AP and WLC.
+
+------------------------------------------------------------------------------------------------
+
+4. Difference between Lightweight APs and Cloud-based APs
+        Feature	Lightweight APs	Cloud-based APs
+        Management	Requires an on-premises WLC	Managed through a cloud controller
+        Configuration	WLC pushes policies and updates	Centralized via cloud
+        Traffic Flow	Routes through WLC	Traffic can go directly to the internet
+
+----------------------------------------------------------------------------------------------------
+
+5. How is the CAPWAP tunnel maintained between AP and controller?
+
+    The tunnel is maintained using keepalive messages.
+
+    If the AP fails to receive responses, it re-initiates the discovery process to connect with the WLC.
+
+---------------------------------------------------------------------------------------------------------------
+
+6. Difference between Sniffer and Monitor mode, with use cases
+
+    Mode	Function	Use Case
+    Sniffer Mode	AP captures and forwards wireless traffic to a packet analyzer (e.g., Wireshark)	Troubleshooting and debugging network issues
+    Monitor Mode	AP scans all channels to detect interference, rogue APs, or security threats	Security analysis and performance optimization
+
+----------------------------------------------------------------------------------------------------------------
+
+7. If WLC is deployed in WAN, which AP mode is best for the local network and why?
+
+    Best Mode: FlexConnect Mode (Hybrid Mode)
+
+    Why?
+
+        Allows local authentication and traffic forwarding.
+
+        Reduces latency and dependence on WLC when WAN connectivity is lost.
+
+--------------------------------------------------------------------------------------------------
+
+8. Challenges of deploying more than 50 autonomous APs in a large network like a university
+
+    Configuration Complexity – Managing settings across all APs is difficult.
+
+    Interference Management – Overlapping signals cause performance issues.
+
+    Lack of Centralized Control – No WLC means no unified policy enforcement.
+
+    Increased Administrative Overhead – Each AP requires individual monitoring and updates.
+
+--------------------------------------------------------------------------------------------------------
+
+9. What happens to a wireless client connected to a Lightweight AP in local mode if WLC goes down?
+
+    Without FlexConnect: Clients disconnect as APs cannot authenticate them.
+
+    With FlexConnect: Clients continue working, as APs handle local authentication and data forwarding.
