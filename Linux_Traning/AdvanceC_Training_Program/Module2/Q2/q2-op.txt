@@ -1,0 +1,20 @@
+
+Enter the value of N: 3
+Thread 1 is running
+Thread 2 is running
+Sum of first 3 prime numbers is: 10
+Thread A time: 0 seconds
+Thread 1 is running
+Thread 2 is running
+Thread 1 is running
+^C
+SIGINT (Ctrl+C) caught. Ignoring...
+Thread 1 is running
+Thread 2 is running
+Thread 1 is running
+Thread 2 is running
+^C
+SIGINT (Ctrl+C) caught. Ignoring...
+Thread B time: 10 seconds
+Thread C time: 12 seconds
+All threads completed.

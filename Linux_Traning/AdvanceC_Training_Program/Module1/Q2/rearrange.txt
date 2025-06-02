@@ -1,0 +1,10 @@
+Enter the size of the array: 6
+Enter the 6 values:
+10
+20
+5
+2
+3
+5
+The rearranged order (even numbers first):
+10 20 2 5 3 5 

@@ -1,0 +1,19 @@
+Enter your choice (1 - Input task, 2 - Display tasks, 3 - Exit): 1
+Enter the day number (1-Monday to 7-Sunday): 3
+Enter the number of tasks you want to schedule on WEDNESDAY: 2
+Enter task 1: VIVA
+Enter task 2: MEETINGS
+
+Enter your choice (1 - Input task, 2 - Display tasks, 3 - Exit): 1
+Enter the day number (1-Monday to 7-Sunday): 
+Enter the number of tasks you want to schedule on THURSDAY: 5
+Maximum number of tasks you can schedule is: 3
+
+Enter your choice (1 - Input task, 2 - Display tasks, 3 - Exit): 2
+Enter the day number (1-Monday to 7-Sunday): 3
+The list of tasks scheduled on WEDNESDAY:
+TASK 1: VIVA
+TASK 2: MEETINGS
+
+Enter your choice (1 - Input task, 2 - Display tasks, 3 - Exit): 3
+Invalid choice.

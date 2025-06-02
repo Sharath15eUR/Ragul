@@ -1,0 +1,7 @@
+Enter the size of the  2D array (n x n):3 3 
+Enter 9 elements in sorted manner:
+1 3 2
+2 5 9
+3 6 10
+Enter key to search: 5
+Key found at matrix[1][1]
